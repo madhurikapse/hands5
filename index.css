@@ -1,0 +1,112 @@
+body{
+    background-color: yellow;
+    text-align: center;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+    border: none;
+}
+.box1{
+    background-color: blueviolet;
+    animation-name: a ;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    transform: skewX(-45deg);
+}
+@keyframes a {
+    0%{
+        transform: skewX(-30deg);
+    }
+    50%{
+        transform: skewX(30deg);
+    }
+    100%{
+        transform: scaleX(-30deg);
+    }
+}
+.box2{
+    background-color: cadetblue;
+    animation-name: b;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+@keyframes b {
+    0%{
+        transform: skewY(-20deg);
+    }
+    50%{
+        transform: skewY(20deg);
+    }
+    100%{
+        transform: scaleY(-20deg);
+    }
+}
+.box3{
+    background-color: cornflowerblue;
+    animation-name: c;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes c {
+   0%{
+    transform: rotate(0deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+}
+.box4{
+    background-color: brown;
+    animation-name: d ;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+@keyframes d {
+    0%{
+        transform: scaleY(0.5);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0.5);
+    }
+}
+.box5{
+    background-color: aquamarine;
+    animation-name: e ;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+@keyframes e {
+    0%{
+        transform: scaleX(0.5);
+    }
+    50%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0.5);
+    }
+}
+.box6{
+    background-color: cadetblue;
+    animation-name: f ;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+@keyframes f {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
